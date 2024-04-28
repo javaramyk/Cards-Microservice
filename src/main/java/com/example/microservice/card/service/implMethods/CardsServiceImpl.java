@@ -4,6 +4,7 @@ import java.util.Optional;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.microservice.card.constants.CardsConstants;
 import com.example.microservice.card.dto.CardsDto;
@@ -14,6 +15,9 @@ import com.example.microservice.card.mapper.CardsMapper;
 import com.example.microservice.card.repository.CardsRepository;
 import com.example.microservice.card.service.ICardsService;
 
+import lombok.AllArgsConstructor;
+@Service
+@AllArgsConstructor
 public class CardsServiceImpl implements ICardsService{
 
 	@Autowired

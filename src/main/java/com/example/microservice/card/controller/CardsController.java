@@ -1,6 +1,5 @@
 package com.example.microservice.card.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -40,7 +39,6 @@ import lombok.AllArgsConstructor;
 @Validated
 public class CardsController {
 
-	@Autowired
 	private ICardsService iCardsService;
 	
 	@Operation(summary="Create Card REST API",description="Rest API to create new Card inside SPringboot")
